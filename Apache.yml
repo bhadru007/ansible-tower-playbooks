@@ -1,0 +1,14 @@
+---
+- hosts: aapServers
+  become: true
+  tasks:
+   - name: install Apache HTTP Server
+     yum: name=httpd update_cache=yes state=latest
+     notify:
+       - start HTTP Server
+handlers:
+  - name: start HTTP Server
+    service:
+       name=httpd
+       state=restarted
+...
