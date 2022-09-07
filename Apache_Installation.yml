@@ -1,6 +1,6 @@
 ---
   - name: Playbook
-    hosts: webservers
+    hosts: AapServer
     become: yes
     become_user: root
     tasks:
