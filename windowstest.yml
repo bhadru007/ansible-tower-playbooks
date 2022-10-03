@@ -2,5 +2,5 @@
 - hosts: all
   gather_facts: no
   tasks:
-   - name: Chocolatey on Windows10
-     win_chocolatey: name=procexp  state=present
+   - name: Windows10
+     win_command: name=procexp  state=present
