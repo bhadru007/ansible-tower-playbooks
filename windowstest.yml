@@ -1,10 +1,5 @@
 ---
-- name: "Chocolatey"
-  hosts: all
+- hosts: all
   tasks:
-    - name: Install chocolatey
-      win_chocolatey:
-          name:
-           - chocolatey
-           - chocolatey-core.extension
-          state: present
+   - name: Ping  Hosts
+     win_ping:
