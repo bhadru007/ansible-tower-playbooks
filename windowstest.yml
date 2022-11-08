@@ -1,6 +1,10 @@
 ---
-- hosts: all
-  gather_facts: no
+- name: "Chocolatey"
+  hosts: all
   tasks:
-   - name: Windows10
-     win_command: name=procexp  state=present
+    - name: Install chocolatey
+      win_chocolatey:
+          name:
+           - chocolatey
+           - chocolatey-core.extension
+          state: present
