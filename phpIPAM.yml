@@ -12,7 +12,7 @@
         method: POST
         body_format: json
         body: '{
-          "email": "mcm-svc",
+          "username": "mcm-svc",
           "password": "Bhadru01"
         }'
         status_code: 200
