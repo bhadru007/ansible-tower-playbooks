@@ -1,5 +1,5 @@
 ---
-- name: uri module demo
+- name: uri module phpToken
   hosts: all
   become: false
   vars:
