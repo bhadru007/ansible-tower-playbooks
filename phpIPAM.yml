@@ -3,7 +3,7 @@
   hosts: all
   become: false
   vars:
-    server: "ipam.telecom.tcnz.net"
+    server: "https://ipam.telecom.tcnz.net"
     endpoint: "/api/login"
   tasks:
     - name: login
