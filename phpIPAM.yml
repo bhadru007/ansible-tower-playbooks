@@ -1,17 +1,4 @@
 ---
-# Using the URI module this playbook
-# will make a call to the phpipam application
-# and register a token to the output 
-# variable inside the playbook. 
-# 
-# The token is then used to authenticate
-# make a request for next available ip 
-# and reserve this ip. 
-#
-# You can then successfully pass that variable
-# to other plays if grouping roles together.
-#
-#
 - name: Gathering ipam auth token
   uri:
     validate_certs: false
